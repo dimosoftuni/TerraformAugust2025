@@ -5,6 +5,13 @@ terraform {
       version = "4.38.1"
     }
   }
+
+  backend "azurerm" {
+    resource_group_name  = "StorageRG"
+    storage_account_name = "taskboardstoragedim5"
+    container_name       = "taskboardcontainer"
+    key                  = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
@@ -81,6 +88,6 @@ resource "azurerm_app_service_source_control" "aassc" {
   app_id   = azurerm_linux_web_app.alwa.id
   repo_url = var.repo_url
   branch   = "main"
-
+  use_manual_integration = true
 }
 

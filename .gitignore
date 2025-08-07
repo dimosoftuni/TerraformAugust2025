@@ -1,0 +1,42 @@
+# Local .terraform directories
+**/.terraform/*
+!.terraform/providers
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Terraform plan files
+*.tfplan
+
+# Backup files
+*.backup
+
+# Variable files containing sensitive data
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore logs or temp files
+*.log
+*.tmp
+.terraform.lock.hcl
+.terraform/providers/registry.terraform.io/hashicorp/azurerm/4.38.1/windows_amd64/LICENSE.txt
+.terraform/providers/registry.terraform.io/hashicorp/azurerm/4.38.1/windows_amd64/terraform-provider-azurerm_v4.38.1_x5.exe
+.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/LICENSE.txt
+.terraform/providers/registry.terraform.io/hashicorp/random/3.7.2/windows_amd64/terraform-provider-random_v3.7.2_x5.exe
